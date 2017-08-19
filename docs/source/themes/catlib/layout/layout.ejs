@@ -6,6 +6,7 @@
     <title><%- page.title ? page.title + ' — ' : '' %>ILRuntime</title>
     <meta charset="utf-8">
     <meta name="description" content="<%- theme.site_description %>">
+    <meta name="keywords" content="ILRuntime,ILRuntime中文网,ILRuntime教程,ILRuntime官网">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <%- css(isIndex ? '/css/index' : '/css/page') %>
@@ -16,7 +17,7 @@
 
     <body>
         <% if(isIndex){ %>
-            <script>window.location.href='v1/guide/index.html';</script>
+            <%- partial('index') %>
         <% }else{ %>
             <%- partial('page') %>
         <% } %>
